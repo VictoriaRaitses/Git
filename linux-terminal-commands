@@ -1,0 +1,155 @@
+mkdir => directory creation
+touch => file creation
+-p    => file existence (creates path)
+cp    => copy
+--------------------------------------------
+
+cd  => change directory
+ls  => list of files
+la  => complete file information
+pwd => current directory
+..  => previous directory
+../ => back two or more directories
+.   => in this directory
+|   => A pipe is a form of redirection (transfer of standard output to some other destination)
+       that is used to send the output of one command/program/process to another
+       command/program/process for further processing.
+Example: history | tail => show the last 10 lines from history
+
+green color of the file means that the file is binary, it can be execute (.exe)
+
+---------------------------------------------
+
+mv       => move file
+rm       => remove a file
+sudo     => raise the access level to superuser
+rm -r    => recursively delete all files from all folders
+chmod +x => add file execution
+cat      => read file history
+---------------------------------------------
+
+>         => write (create) file
+>>        => modify existing file
+date      => display the system date and time
+tail      => shows the last 10 lines by default
+tail -n   => shows the last n number of lines
+head      => shows the first 10 lines by default
+head -n   => shows the first n number of lines
+----------------------------------------------
+
+wc    => stands for word count
+wc -l => number of lines
+wc -c => number of bytes
+wc -w => number of words
+wc -L => can be used to print out the length of longest (number of characters) line in a file
+echo  => outputs text
+----------------------------------------------
+
+history > /tmp/history.txt => redirect data and create file
+
+vi => text editor where { i => input mode
+                       exit => exit mode from input mode
+           :x   :wq   :zz   => three options for exiting the editor
+
+nano => new text editor
+----------------------------------------------
+
+top     => shows how much memory is free and how much is occupied
+free -m => shows how many free megabytes of memory
+Ctrl C  => is used to kill a process with signal SIGINT , in other words it is a polite kill
+Ctrl Z  => is used to suspend a process by sending it the signal SIGTSTP
+          , which is like a sleep signal, that can be undone and the process can be resumed again.
+
+/proc/cpuinfo => The file /proc/cpuinfo displays what type of processor your system is running
+                     including the number of CPUs presen
+df -h => disk fullness
+
+cat/etc/os-release and /usr/lib/os-release => files contain operating system identification data
+-----------------------------------------------
+
+ps    => command is used to list the currently running processes
+        and their PIDs along with some other information depends on different options
+grep  => command can be used to find or search a regular expression or a string in a text file
+chmod => command is used to change the access mode of a file
+------------------------------------------------
+
+Reference   Class     Description
+u          owner      file's owner
+
+g          group      users who are members of
+                      the file's group
+
+o          others     users who are neither the
+                      file's owner nor members of
+                      the file's group
+
+a          all       All three of the above, same as ugo
+--------------------------------------------------
+
+r       Permission to read the file.
+w       Permission to write (or delete) the file.
+x       Permission to execute the file, or, in
+        the case of a directory, search it.
+--------------------------------------------------
+
+chown => to change the owner of file system files
+         , directories. Unprivileged (regular) users who
+         wish to change the group membership of a file that they own may use chgrp.
+ssh  => It is a protocol used to securely connect to a remote server/system
+         . ssh is secure in the sense that it transfers the data in encrypted form between
+         the host and the client
+pem  => Resolution. Privacy Enhanced Mail (PEM) files are concatenated certificate containers
+        frequently used in certificate installations when multiple certificates that
+        form a complete chain are being imported as a single file.
+---------------------------------------------------
+
+locate     => used to find the files by name
+              . There is two most widely used file searching utilities accessible
+              to users are called find and locate
+cron       => is a clock daemon, whose name originates from Chronos
+              , the Greek word for time. It enables users to automate the execution of commands
+              , scripts (a group of commands) or programs at specified time intervals.
+
+crontab => is a list of commands that you want to run on a regular schedule
+           , and also the name of the command used to manage that list.
+	  -e	(edit user's crontab)
+	  -l	(list user's crontab)
+	  -r	(delete user's crontab)
+	  -i	(prompt before deleting user's crontab)
+      -s	(selinux context)
+-----------------------------------------------------
+
+kill     => is a built-in command which is used to terminate processes manually.
+kill -9  => unconditional interrupt
+kill all => interrupt all
+awk      => display a column
+grep -v  => display everything except ...
+grep -w  => output a line with a specific word
+tr -d    => trim character
+-----------------------------------------------------
+                       Github
+
+mkdir victoria_raitses => create a directory with the name of the repository
+create file README.md
+echo "# victoria_git" >> README.md
+Set your username: git config --global user.name "FIRST_NAME LAST_NAME"
+Set your email address: git config --global user.email "MY_NAME@example.com"
+git init => connecting to the repository
+
+git status    => displays the state of the working directory and the staging area
+                 . It lets you see which changes have been staged, which haven't
+                 , and which files aren't being tracked by Git.
+git commit -m => save current state with message
+git log       => view history
+git remote add origin + repository link => combine local git and remote
+git push -u origin master => send data from local git to remote
+
+git branch => A branch in Git is simply a lightweight movable pointer to one of these commits.
+              ... As you start making commits, you're given a master branch that points to the last commit you made
+              . Every time you commit, the master branch pointer moves forward automatically
+              . Note. The “master” branch in Git is not a special branch.
+
+git checkout -b "new-branch" => creating a new branch
+rm -r => delete file (repository)
+explorer . => find the storage location of the local repository
+
